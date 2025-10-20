@@ -1,30 +1,58 @@
-body
+header
 {
-    background-color: rgb(196, 188, 188);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    justify-content: center;
-    align-items: center;
+    justify-self: center;
+    background-color: rgb(192, 189, 189);
+    width: 90%;
     text-align: center;
-    justify-items: center;
+    margin-left: 2px;
+    
 }
 
-.container-list
+header:hover
 {
+    background-color: rgb(161, 161, 161);
+    color: white;
+    transform: color;
+}
+
+body
+{
+    font-family:'Times New Roman', Times, serif;
+    background-color: gainsboro;
+    font-size: large;
+}
+
+.list
+{
+    border: 1px dashed;
+    justify-content: center;
+    padding: 0px 15px 0px;
+}
+
+.container
+{
+    justify-self: center;
     display: flex;
-    gap: 20px;
-    margin-top: 20px;
+    gap: 5%;
+}
+
+a:link
+{
+    text-decoration: none;
 }
 
 footer
 {
-    background-color: antiquewhite;
-    color: black;
-    padding: 10%;
-    
+    justify-self: center;
+    background-color: rgb(192, 189, 189);
+    width: 90%;
+    text-align: center;
+    margin-top: 25%;
+    transition: background-color color 0.2s ease-in-out;
 }
 
 footer:hover
 {
-    background-color: azure;
-    
+    background-color: rgb(161, 161, 161);
+    color: white;
 }
