@@ -3,77 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>08 Lab Exercise 1</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="./src/output.css">
 </head>
-<body>
-    <header>
-        <h1>My To Do List</h1>
-    </header>
+<body class="min-h-screen bg-gradient-to-br from-gray-100 to bg-gray-300 flex flex-col">
+    <!-- Header -->
+    <div>
+        <header class="bg-gradient-to-r from-blue-800 to-indigo-500 text-white text-center py-5 text-2xl font-bold">My To-Do List</header>
+    </div>
+    <!-- Main Content -->
     
-    <div class="container">
-        <div class="list"> <!-- List -->
-            <ul>
-                <li>ILS</li>
-                <li>ILS</li>
-                <li>ACTIVITY</li>
-                <li><a href="https://www.sti.edu.ph/" target="_blank">Link Here</a></li>
+    <main class="flex flex-col md:flex-row justify-center gap-10 p-6 md:p-12">
+        <!-- Left Container -->
+        <div class="bg-white w-full md:w-1/3 rounded-xl shadow-lg p-6 border-dashed border-2 border-indigo-700">
+            <h2 class="text-xl font-semibold text-indigo-600 text-center mb-4">Tasks</h2>
+            <ul class="space-y-3 list-disc list-inside text-gray-700">
+                <li class="list-disc px-4 py-2 rounded-md hover:bg-indigo-500 hover:text-white transition-all">ILS</li>
+                <li class="list-disc px-4 py-2 rounded-md hover:bg-indigo-500 hover:text-white transition-all">ILS</li>
+                <li class="list-disc px-4 py-2 rounded-md hover:bg-indigo-500 hover:text-white transition-all">Activities</li>
+                <li class="list-disc px-4 py-2 rounded-md hover:bg-indigo-500 hover:text-white transition-all"><a href="https://elms.sti.edu/" target="_blank" class=" active:text-black">Link Here</a></li>
             </ul>
         </div>
-        <div> <!-- Table -->
-            <table border="1">
-                <tr>
-                    <th>Subject</th>
-                    <th>Assignments</th>
-                    <th>Done</th>
-                </tr>
-                <tr>
-                    <td>Introduction to Philosophy</td>
-                    <td>1</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Computer Programming #1</td>
-                    <td>6</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>Computer Programming #2</td>
-                    <td>6</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Physical Education</td>
-                    <td>2</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Media and Information Literacy</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>Oral Communication</td>
-                    <td>7</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>General Mathematics</td>
-                    <td>2</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>21st Century</td>
-                    <td>1</td>
-                    <td>1</td>
-                </tr>
-                
+
+        <!-- Right Container -->
+        <div class="bg-white w-full md:w-2/3 rounded-xl shadow-lg p-6 overflow-x-auto">
+            <h2 class="text-xl font-semibold text-indigo-600 text-center mb-4">Assignments</h2>
+            <table class="w-full border-collapse border border-gray-300 text-gray-800">
+                <thead class="bg-indigo-600 text-white">
+                    <tr>
+                        <th class="border border-gray-300 py-2 px-3">Subject</th>
+                        <th class="border border-gray-300 py-2 px-3">Assignments</th>
+                        <th class="border border-gray-300 py-2 px-3">Done</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr class="hover:bg-gray-100 transition">
+                        <td class="border border-gray-300 py-2 px-3">Introduction to Philosophy</td>
+                        <td class="border border-gray-300 py-2 px-3">9</td>
+                        <td class="border border-gray-300 py-2 px-3">9</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 transition">
+                        <td class="border border-gray-300 py-2 px-3">Computer Programming #1</td>
+                        <td class="border border-gray-300 py-2 px-3">6</td>
+                        <td class="border border-gray-300 py-2 px-3">6</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 transition">
+                        <td class="border border-gray-300 py-2 px-3">Computer Programming #2</td>
+                        <td class="border border-gray-300 py-2 px-3">6</td>
+                        <td class="border border-gray-300 py-2 px-3">5</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 transition">
+                        <td class="border border-gray-300 py-2 px-3">Phyisical Education</td>
+                        <td class="border border-gray-300 py-2 px-3">2</td>
+                        <td class="border border-gray-300 py-2 px-3">2</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 transition">
+                        <td class="border border-gray-300 py-2 px-3">Media and Information Literacy</td>
+                        <td class="border border-gray-300 py-2 px-3">0</td>
+                        <td class="border border-gray-300 py-2 px-3">0</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 transition">
+                        <td class="border border-gray-300 py-2 px-3">Oral Communication</td>
+                        <td class="border border-gray-300 py-2 px-3">7</td>
+                        <td class="border border-gray-300 py-2 px-3">7</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 transition">
+                        <td class="border border-gray-300 py-2 px-3">General Mathematics</td>
+                        <td class="border border-gray-300 py-2 px-3">2</td>
+                        <td class="border border-gray-300 py-2 px-3">2</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 transition">
+                        <td class="border border-gray-300 py-2 px-3">21st Century Literature</td>
+                        <td class="border border-gray-300 py-2 px-3">1</td>
+                        <td class="border border-gray-300 py-2 px-3">1</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
-    </div>
+    </main>
 
-    <footer>
-        <h2>"Footer Here" &copy; Cyrus D.</h5>
-    </footer>
+    <!-- Footer -->
+    <div>
+        <footer class="bg-gradient-to-r from-blue-800 to-indigo-500 text-white text-center py-4 mt-auto transition-all duration-500 hover:from-blue-950 hover:to-indigo-700 hover:shadow-[0_0_25px_rgba(59,130,246,0.6)]">
+            <h2 class="text-lg font-semibold tracking-wide">&copy; 2025 My To-Do List - <span class="text-blue-200">Seia</span></h2>
+        </footer>
+    </div>
 </body>
 </html>
